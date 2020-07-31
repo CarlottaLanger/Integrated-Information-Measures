@@ -1,6 +1,16 @@
 # Calculate Integrated Information Meaures for the Ising model
 ## Introduction
-In order to calculate the Integrated Information Measures ϕ_G
+This repository contians the code used in order to generate the results discussed in...
+
+Integrated Information Measures like the ones presented in [1],[2] or [3] are calculated by computing the KL-divergence between the initial distribution and one corresponding to a "partial" or "split" system.
+```math
+D(P || Q) = ∑_z P(z) log (P(z) / Q(z))
+```
+This repository provides the possibility to create initial distributions systematically by fixing a weight matrix W = (w_ij) and increasing the inverse temperature β of an Ising model:
+```math
+P(yj | x) = 1/ (1 + exp{-2 β * ∑_i v_ij x_i y_j})
+```
+After caclulating the distributions, main.cpp allows the computation of the measures  Φ_G,  Φ_SI,  Φ_I and the new measure  Φ_CII.
 
 ## Requirements
 
@@ -17,7 +27,7 @@ In order to calculate the Integrated Information Measures ϕ_G
 	* Number of nodes: nodes
 	* Weight matrix W, default is a random matrix
 	* Path where the document with the stationary distributions should be stored: path
-	* Directly calculte the integrated information measure: informint- works only for nodes = 2,3
+	* Directly calculte the integrated information measure Φ_CIS: informint- works only for nodes = 2,3
 	* Number of times beta is increased: num_steps 
 	* Starting value of beta: beta_start
 	* Value by which beta is increased: beta_diff
@@ -31,4 +41,16 @@ In order to calculate the Integrated Information Measures ϕ_G
 			./main
 		```
 	4. Output can be copy pasted to matplotlib
+
+## References
+[1] Amari, S.; Tsuchiya, N.; Oizumi, M. Geometry of Information Integration. In Information Geometry and Its
+Applications; Ay, N.; Gibilisco, P.; Matúš, F. Eds.; Springer International Publishing, 2018; pp. 3–17.
+
+[2] Kanwal, M.S.; Grochow J.A.; Ay, N. Comparing Information-Theoretic Measures of Complexity in Boltzmann
+Machines. Entropy 2017, 19, 310–326
+
+[3] Oizumi, M.; Tsuchiya, N.; and Amari, S. Unified framework for information integration based on information
+geometry. PNAS 2016, 113,14817–14822.
+
+
 
