@@ -26,10 +26,9 @@ In order to calculate the Integrated Information Measures ϕ_G
 	1. Adjust path and number of nodes in main.cpp
 	2. Conditions for Causal Information Integration and Geometric Integrated Information
 	3. Execute the main.cpp program, on linux
-		g++ main.cpp ProbabilityDist.cpp emIterate.cpp Test.cpp -o main
-		./main
-	4. Output can be copy pasted to matplotlib
 		```console
-		foo@bar:~$ whoami
-		foo
+			g++ main.cpp ProbabilityDist.cpp emIterate.cpp Test.cpp -o main
+			./main
 		```
+	4. Output can be copy pasted to matplotlib
+
