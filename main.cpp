@@ -17,6 +17,6 @@ int main(){
 	// mutual information 
 	tes->testMI();
 
-	// each of the functions produce an output that can be copy pasted to python in order to plot it with matplotlib 
+	// each of the functions produce an output in the python numpy format, it can be copy pasted in order to plot it with matplotlib 
 }
 
