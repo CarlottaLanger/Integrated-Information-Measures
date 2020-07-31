@@ -17,7 +17,7 @@ int main(){
 	// mutual information 
 	tes->testMI();
 	// causal information integration, 3 = number of hidden states, 1000 = max. iterations, 3 = number of different inital distributions
-	tes->testCEI(3, 1000, 3)
+	tes->testCEI(3, 1000, 3);
 
 	// each of the functions produce an output in the python numpy format, it can be copy pasted in order to plot it with matplotlib 
 }
