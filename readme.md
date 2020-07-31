@@ -40,7 +40,7 @@ After caclulating the distributions, main.cpp allows the computation of the meas
 			g++ main.cpp ProbabilityDist.cpp emIterate.cpp Test.cpp -o main
 			./main
 		```
-	4. Output can be copy pasted to matplotlib
+	4. Output can be copy pasted to plot.py
 
 ## References
 [1] Amari, S.; Tsuchiya, N.; Oizumi, M. Geometry of Information Integration. In Information Geometry and Its
