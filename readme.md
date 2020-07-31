@@ -3,13 +3,13 @@
 This repository contians the code used in order to generate the results discussed in...
 
 Integrated Information Measures like the ones presented in [1],[2] or [3] are calculated by computing the KL-divergence between the initial distribution and one corresponding to a "partial" or "split" system.
-```math
-D(P || Q) = ∑_z P(z) log (P(z) / Q(z))
-```
+
+![Alt text](form2.png "Title")
+
 This repository provides the possibility to create initial distributions systematically by fixing a weight matrix W = (w_ij) and increasing the inverse temperature β of an Ising model:
-```math
-P(yj | x) = 1/ (1 + exp{-2 β * ∑_i v_ij x_i y_j})
-```
+
+![Alt text](form1.png "Title")
+
 After caclulating the distributions, main.cpp allows the computation of the measures  Φ_G,  Φ_SI,  Φ_I and the new measure  Φ_CII.
 
 ## Requirements
