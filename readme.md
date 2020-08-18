@@ -1,6 +1,5 @@
 # Calculate Integrated Information Meaures for the Ising model
 ## Introduction
-This repository contians the code used in order to generate the results discussed in...
 
 Integrated Information Measures like the ones presented in [1],[2] or [3] are calculated by computing the KL-divergence between the initial distribution and one corresponding to a "partial" or "split" system Q.
 
