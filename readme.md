@@ -9,7 +9,6 @@ This repository provides the possibility to create initial distributions systema
 
 ![Alt text](form1.png "Title")
 
-For more details see ... Section ... .
 After caclulating the distributions, main.cpp allows the computation of the measures  Φ_G,  Φ_SI,  Φ_I and the new measure  Φ_CII.
 
 ## Requirements
