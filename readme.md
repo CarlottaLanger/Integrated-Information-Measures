@@ -22,14 +22,15 @@ After caclulating the distributions, main.cpp allows the computation of the meas
 
 ## How to use
 
-1. Create a list of the stationary distributions with Boltzmann.py
-	* Number of nodes: nodes
-	* Weight matrix W, default is a random matrix
-	* Path where the document with the stationary distributions should be stored: path
-	* Directly calculte the integrated information measure Φ_CIS: informint- works only for nodes = 2,3
-	* Number of times beta is increased: num_steps 
-	* Starting value of beta: beta_start
-	* Value by which beta is increased: beta_diff
+1. Create a list of the stationary distributions with Boltzmann.py <br />
+	Parameters:
+	* nodes: 	Number of nodes
+	* W:	 	Weight matrix, default is a random matrix
+	* path:  	Path where the document with the stationary distributions should be stored
+	* informint: 	Directly calculte the integrated information measure Φ_CIS- works only for nodes = 2,3
+	* num_steps:	Number of times beta is increased 
+	* beta_start:	Starting value of beta
+	* beta_diff: 	Value by which beta is increased
 
 2. Calculate: Mutual Information, Stochastic Interaction, Geometric Integrated Information and Causal Information Integration
 	1. Adjust path and number of nodes in main.cpp
